@@ -25,7 +25,7 @@ const handleDetectFaces = (req, res) => {
     
     const USER_ID = 'ricsala';
     // Your PAT (Personal Access Token) can be found in the portal under Authentification
-    const PAT = CLARIFAI_PAT;
+    const PAT = process.env.CLARIFAI_PAT;
     const APP_ID = 'face-recognition';
     // Change these to whatever model and image URL you want to use
     const MODEL_ID = 'face-detection';

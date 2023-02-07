@@ -12,10 +12,10 @@ import handleDetectFaces from './controllers/detectFaces.js';
 const db = knex({
     client: 'pg',
     connection: {
-      host : DB_CONNECTION_HOST,
+      host : process.env.DB_CONNECTION_HOST,
       port : 5432,
       user : 'postgres',
-      password : DB_CONNECTION_PASSWORD,
+      password : process.env.DB_CONNECTION_PASSWORD,
       database : 'postgres'
     }
 });
