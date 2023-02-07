@@ -1,4 +1,7 @@
 
+import fetch from 'node-fetch';
+
+
 // const calculatePosition = (data) => {
 //     const faces = data.outputs[0].data.regions[0].region_info.bounding_box;
 //     const top = faces.top_row * 100 + "%";
